@@ -50,3 +50,18 @@ Route::get('/siswa/hapus/{params}', 'SiswaController@hapus');
 
 // search
 Route::get('/siswa/cari', 'SiswaController@cari');
+
+// ELOQUENT CRUD
+// get all
+Route::get('/mentor', 'MentorController@index');
+
+// input
+Route::get('/mentor/tambah', 'MentorController@tambah');
+Route::post('/mentor/store', 'MentorController@store');
+
+// edit
+Route::get('/mentor/edit/{params}', 'MentorController@edit');
+Route::put('/mentor/update/{params}', 'MentorController@update');
+
+// delete
+Route::get('/mentor/hapus/{params}', 'MentorController@hapus');

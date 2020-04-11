@@ -25,6 +25,19 @@ class SiswaController extends Controller
 
     public function store(Request $request)
     {
+        $messages = [
+            'required' => ':attribute wajib diisi ya!',
+            'min' => ':attribute harus diisi minimal :min karakter ya!',
+            'max' => ':attribute harus diisi maksimal :max karakter ya!',
+        ];
+
+        // validasi user data input
+        $this->validate($request,[
+            'nama' => 'required',
+            'umur' => 'required|numeric|min:1|max:70',
+            'alamat' => 'required'
+        ], $messages);
+
         // insert data ke table siswa
         DB::table('siswa')->insert([
             'nama' => $request->nama,
@@ -67,7 +80,7 @@ class SiswaController extends Controller
     public function cari(Request $request)
     {
         // menangkap data pencarian
-        $nama = $request->cari_nama;
+        $nama = $request->nama_siswa;
         $alamat = $request->alamat;
  
         // mengambil data dari table siswa sesuai pencarian data

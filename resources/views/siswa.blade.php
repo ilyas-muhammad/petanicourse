@@ -12,7 +12,7 @@
     <div class="form-group">
         <p>Cari Data Siswa :</p>
             <form action="/siswa/cari" method="GET" class="form-inline">
-                <input class="form-control" type="text" name="cari_nama" placeholder="Cari Siswa .." value="{{ old('cari_nama') }}">
+                <input class="form-control" type="text" name="nama_siswa" placeholder="Cari Siswa .." value="{{ old('cari_nama') }}">
                 <input class="form-control" type="text" name="alamat" placeholder="Cari Alamat Siswa.." value="{{ old('alamat') }}">
                 <input class="btn btn-primary ml-3" type="submit" value="CARI">
             </form>

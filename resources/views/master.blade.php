@@ -32,6 +32,8 @@
 						<a href="/contact">CONTACT</a>
 						|
 						<a href="/siswa">SISWA</a>
+						|
+						<a href="/mentor">MENTOR</a>
 					</nav>
 				</header>
 				<hr/>
