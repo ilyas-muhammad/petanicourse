@@ -25,10 +25,10 @@ class SiswaController extends Controller
 
     public function store(Request $request)
     {
-        $messages = [
+        $pesan = [
             'required' => ':attribute wajib diisi ya!',
-            'min' => ':attribute harus diisi minimal :min karakter ya!',
-            'max' => ':attribute harus diisi maksimal :max karakter ya!',
+            'min' => ':attribute harus diisi minimal :min ya!',
+            'max' => ':attribute harus diisi maksimal :max ya!',
         ];
 
         // validasi user data input
@@ -36,7 +36,7 @@ class SiswaController extends Controller
             'nama' => 'required',
             'umur' => 'required|numeric|min:1|max:70',
             'alamat' => 'required'
-        ], $messages);
+        ], $pesan);
 
         // insert data ke table siswa
         DB::table('siswa')->insert([

@@ -34,6 +34,12 @@
 						<a href="/siswa">SISWA</a>
 						|
 						<a href="/mentor">MENTOR</a>
+						|
+						<a href="/murid">MURID</a>
+						|
+						<a href="/kelas">KELAS</a>
+						|
+						<a href="/blog-author">ARTIKEL</a>
 					</nav>
 				</header>
 				<hr/>

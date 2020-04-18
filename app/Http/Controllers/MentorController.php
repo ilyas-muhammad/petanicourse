@@ -54,7 +54,7 @@ class MentorController extends Controller
         $mentor = Mentor::find($id);
 
         $mentor->nama = $request->nama;
-        $mentor->nama = $request->nama;
+        $mentor->umur = $request->umur;
         $mentor->alamat = $request->alamat;
 
         $mentor->save();

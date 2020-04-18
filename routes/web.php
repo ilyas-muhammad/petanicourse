@@ -65,3 +65,12 @@ Route::put('/mentor/update/{params}', 'MentorController@update');
 
 // delete
 Route::get('/mentor/hapus/{params}', 'MentorController@hapus');
+
+// Relation Murid
+Route::get('/murid', 'MuridController@index');
+
+// One To Many Blog
+Route::get('/blog-author', 'BlogAuthorController@index');
+
+// Many to Many Kelas - Member
+Route::get('/kelas', 'KelasController@index');

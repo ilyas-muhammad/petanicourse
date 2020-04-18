@@ -27,11 +27,11 @@
     </div>
     <div class="form-group">
         <label for="umur">*Umur</label>
-        <input class="form-control" type="number" name="umur" value="{{ old('nama') }}">
+        <input class="form-control" type="number" name="umur" value="{{ old('umur') }}">
     </div>
     <div class="form-group">
         <label for="alamat">*Alamat</label>
-        <textarea class="form-control" name="alamat">{{ old('nama') }}</textarea> 
+        <textarea class="form-control" name="alamat">{{ old('alamat') }}</textarea> 
     </div>
     <div class="form-group">
         <input class="btn btn-primary" type="submit" value="Simpan Data">
