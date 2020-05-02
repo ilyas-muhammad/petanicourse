@@ -74,3 +74,7 @@ Route::get('/blog-author', 'BlogAuthorController@index');
 
 // Many to Many Kelas - Member
 Route::get('/kelas', 'KelasController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
