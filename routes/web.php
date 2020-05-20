@@ -22,6 +22,14 @@ Route::get('/new-route', function () {
     return 'create new route in laravel';
 });
 
+Route::get('/route-baru', function() {
+    return 'ini adalah contoh route baru';
+});
+
+Route::get('/belajar-view', function() {
+    return view('belajar-v');
+});
+
 // Request POST - GET
 Route::get('/request/{param}', 'PetaniWebController@requestData');
 Route::get('/form-contact', 'PetaniWebController@addContact');
@@ -78,3 +86,7 @@ Route::get('/kelas', 'KelasController@index');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// Upload
+Route::get('/upload', 'UploadController@upload');
+Route::post('/upload/proses', 'UploadController@process_upload');

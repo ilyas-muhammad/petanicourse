@@ -40,6 +40,8 @@
 						<a href="/kelas">KELAS</a>
 						|
 						<a href="/blog-author">ARTIKEL</a>
+						|
+						<a href="/upload">UPLOAD</a>
 					</nav>
 				</header>
 				<hr/>
